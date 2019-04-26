@@ -63,23 +63,23 @@ function total() {
 
 function removeFromCart(item) {
   // rule out an absent item, first.
-  if(!cart.find(name => cart.name === item)) {
-    return "That item is not in your cart."
-  } 
+//   if(!cart.find(name => cart.name === item)) {
+//     return "That item is not in your cart."
+//   } 
   
-  // Grocery item to be deleted will be stored here:
-  let tbd = cart.find(name => cart.name === item);
+//   // Grocery item to be deleted will be stored here:
+//   let tbd = cart.find(name => cart.name === item);
   
-  // index of grocery item:
-  let idx = cart.indexOf(tbd);
+//   // index of grocery item:
+//   let idx = cart.indexOf(tbd);
   
-  // Delete the item.
-  let newCart = cart.splice(tbd, 1);
+//   // Delete the item.
+//   let newCart = cart.splice(tbd, 1);
 
-  cart = newCart;
+//   cart = newCart;
   
-  return cart;
-}
+//   return cart;
+// }
 
 
 function placeOrder(cardNumber) {
