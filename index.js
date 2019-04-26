@@ -104,7 +104,6 @@ let removeFromCart = (item) => {
   return cart;
 }
 
-removeFromCart("cheese");
 
 
 function placeOrder(cardNumber) {
