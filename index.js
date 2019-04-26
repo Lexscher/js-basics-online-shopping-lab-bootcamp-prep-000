@@ -81,6 +81,31 @@ function removeFromCart(item) {
 //   return cart;
 // }
 
+let removeFromCart = (item) => {
+  // rule out an absent item, first.
+  // if(!cart.find(name => cart.name === item)) {
+	//let msg = "That item is not in your cart."
+	//console.log(msg);
+  //  return msg
+  // } 
+
+  // full cart
+  console.log(cart)
+  
+  // Grocery item index to be deleted will be stored here:
+  let idx = cart.findIndex(grocery => grocery.itemName === item);
+  console.log("found: " + idx + " is index of" + item);
+  
+  // Delete the item.
+  cart.splice(idx, 1);
+
+  
+  console.log(cart);
+  return cart;
+}
+
+removeFromCart("cheese");
+
 
 function placeOrder(cardNumber) {
   // if we don't have a card Number
