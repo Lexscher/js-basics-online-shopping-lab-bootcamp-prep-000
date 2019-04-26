@@ -82,15 +82,10 @@ function total() {
 // }
 
 let removeFromCart = (item) => {
-  // rule out an absent item, first.
-  // if(!cart.find(name => cart.name === item)) {
-	//let msg = "That item is not in your cart."
-	//console.log(msg);
-  //  return msg
-  // } 
-
-  // full cart
-  console.log(cart)
+  // check if the item in question is valid.
+	if (!cart.find(i => i.itemName === item)) {
+			return "That item is not in your cart."
+        }
   
   // Grocery item index to be deleted will be stored here:
   let idx = cart.findIndex(grocery => grocery.itemName === item);
@@ -99,8 +94,7 @@ let removeFromCart = (item) => {
   // Delete the item.
   cart.splice(idx, 1);
 
-  
-  console.log(cart);
+  // Return the cart
   return cart;
 }
 
