@@ -61,7 +61,7 @@ function total() {
 //   return cart;
 // }
 
-function removeFromCart(item) {
+// function removeFromCart(item) {
   // rule out an absent item, first.
 //   if(!cart.find(name => cart.name === item)) {
 //     return "That item is not in your cart."
